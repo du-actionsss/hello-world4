@@ -2,7 +2,6 @@
     "name": "eladr/elad-common",
     "description": "Sample Composer project",
     "keywords":    ["helloworld", "sample", "test"],
-    "version":     "1.0.5",
     "type":        "library",
     "license":     "MIT",
     "authors": [
