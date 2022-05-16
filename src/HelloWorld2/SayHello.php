@@ -6,6 +6,6 @@ Class SayHello
 {
     public static function world()
     {
-        return 'Hello Composer2!';
+        return 'Hello Composer4.0.0!';
     }
 }
