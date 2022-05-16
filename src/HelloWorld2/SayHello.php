@@ -1,11 +1,11 @@
 <?php
 
-Namespace HelloWorld;
+Namespace HelloWorld2;
 
 Class SayHello
 {
     public static function world()
     {
-        return 'Hello Composer!';
+        return 'Hello Composer2!';
     }
 }

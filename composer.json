@@ -9,15 +9,15 @@
         {
             "name": "EladPackage",
             "email": "dodomeki@gmail.com"
+        },
+        {
+            "name": "KukuPackage",
+            "email": "kuku1919@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "4.3.5",
-        "mockery/mockery": "0.8.*"
     },
     "autoload": {
         "psr-0": {

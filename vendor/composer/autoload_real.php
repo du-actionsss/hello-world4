@@ -28,34 +28,11 @@ class ComposerAutoloaderInit75f39ee363b0cfe2bf6c776d6256e6bb
         self::$loader = $loader = new \Composer\Autoload\ClassLoader(\dirname(__DIR__));
         spl_autoload_unregister(array('ComposerAutoloaderInit75f39ee363b0cfe2bf6c776d6256e6bb', 'loadClassLoader'));
 
-        $includePaths = require __DIR__ . '/include_paths.php';
-        $includePaths[] = get_include_path();
-        set_include_path(implode(PATH_SEPARATOR, $includePaths));
-
         require __DIR__ . '/autoload_static.php';
         call_user_func(\Composer\Autoload\ComposerStaticInit75f39ee363b0cfe2bf6c776d6256e6bb::getInitializer($loader));
 
         $loader->register(true);
 
-        $includeFiles = \Composer\Autoload\ComposerStaticInit75f39ee363b0cfe2bf6c776d6256e6bb::$files;
-        foreach ($includeFiles as $fileIdentifier => $file) {
-            composerRequire75f39ee363b0cfe2bf6c776d6256e6bb($fileIdentifier, $file);
-        }
-
         return $loader;
-    }
-}
-
-/**
- * @param string $fileIdentifier
- * @param string $file
- * @return void
- */
-function composerRequire75f39ee363b0cfe2bf6c776d6256e6bb($fileIdentifier, $file)
-{
-    if (empty($GLOBALS['__composer_autoload_files'][$fileIdentifier])) {
-        $GLOBALS['__composer_autoload_files'][$fileIdentifier] = true;
-
-        require $file;
     }
 }
