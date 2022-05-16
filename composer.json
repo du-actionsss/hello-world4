@@ -1,0 +1,15 @@
+{
+    "name": "eladrapaport/php-tester",
+    "autoload": {
+        "psr-4": {
+            "Eladrapaport\\PhpTester\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elad Rapoport",
+            "email": "elad.rapoport@checkmarx.com"
+        }
+    ],
+    "require": {}
+}
