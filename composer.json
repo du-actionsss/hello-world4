@@ -1,15 +1,27 @@
 {
-    "name": "eladrapaport/php-tester",
-    "autoload": {
-        "psr-4": {
-            "Eladrapaport\\PhpTester\\": "src/"
-        }
-    },
+    "name": "eladr/elad-common",
+    "description": "Sample Composer project",
+    "keywords":    ["helloworld", "sample", "test"],
+    "version":     "1.0.5",
+    "type":        "library",
+    "license":     "MIT",
     "authors": [
         {
-            "name": "Elad Rapoport",
-            "email": "elad.rapoport@checkmarx.com"
+            "name": "EladPackage",
+            "email": "dodomeki@gmail.com"
         }
     ],
-    "require": {}
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.3.5",
+        "mockery/mockery": "0.8.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "HelloWorld": "src/"
+        }
+    }
 }
