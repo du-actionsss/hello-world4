@@ -6,6 +6,6 @@ Class SayHello
 {
     public static function world()
     {
-        return 'Hello before takeover2!';
+        return 'Hello before takeover6!';
     }
 }
