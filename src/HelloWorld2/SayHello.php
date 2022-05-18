@@ -6,6 +6,6 @@ Class SayHello
 {
     public static function world()
     {
-        return 'Hello before takeover4!';
+        return 'Hello before takeover12.0.8!';
     }
 }
